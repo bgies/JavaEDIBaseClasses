@@ -10,40 +10,11 @@ package com.bgies.edi.element;
 
 abstract class AnsiBasicElement extends AnsiAtomicElement {
 
-    private int MinLength;
-    private int MaxLength;
     private int MinimumMajorVersion;
     private int MinimumMinorVersion;
     private int MaxMajorVersion;
     private int MaxMinorVersion;
 
-    /**
-     * @return the MinLength
-     */
-    public int getMinLength() {
-        return MinLength;
-    }
-
-    /**
-     * @param MinLength the MinLength to set
-     */
-    public void setMinLength(int MinLength) {
-        this.MinLength = MinLength;
-    }
-
-    /**
-     * @return the MaxLength
-     */
-    public int getMaxLength() {
-        return MaxLength;
-    }
-
-    /**
-     * @param MaxLength the MaxLength to set
-     */
-    public void setMaxLength(int MaxLength) {
-        this.MaxLength = MaxLength;
-    }
 
     /**
      * @return the MinimumMajorVersion

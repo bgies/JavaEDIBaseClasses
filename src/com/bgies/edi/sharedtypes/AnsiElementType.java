@@ -8,5 +8,5 @@ package com.bgies.edi.sharedtypes;
  * The base element Types
  *
  */
-public enum AnsiElementType { UNKNOWN, NUMERIC, DECIMAL, ID, STRING, DATE, TIME, BINARY};
+public enum AnsiElementType { Unk, Nn, R, ID, AN, DT, TM, B};
 

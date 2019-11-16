@@ -1,7 +1,7 @@
 package com.bgies.edi.element;
 
 import com.bgies.edi.sharedtypes.AnsiVersionNumbers;
-import com.bgies.edi.sharedtypes.AnsiElementType;
+import com.bgies.edi.sharedtypes.AnsiElementDescription;
 
 /**
  * @author Brad AtomicElement provides the properties that every element has
@@ -10,8 +10,12 @@ abstract class AnsiAtomicElement {
 
    private String          elementId;
    private String          elementName;
-   private AnsiElementType elementType;
+   private AnsiElementDescription elementType;
    private String          Value;
+   private int ValueMinLength;
+   private int ValueMaxLength;
+   
+
 
     /**
      * @return the elementId
@@ -44,14 +48,14 @@ abstract class AnsiAtomicElement {
     /**
      * @return the elementType
      */
-    public AnsiElementType getElementType() {
+    public AnsiElementDescription getElementType() {
         return elementType;
     }
 
     /**
      * @param elementType the elementType to set
      */
-    public void setElementType(AnsiElementType elementType) {
+    public void setElementType(AnsiElementDescription elementType) {
         this.elementType = elementType;
     }
 
@@ -69,6 +73,22 @@ abstract class AnsiAtomicElement {
         this.Value = Value;
     }
    
+    public int getValueMinLength() {
+        return ValueMinLength;
+    }
+
+    public void setValueMinLength(int ValueMinLength) {
+        this.ValueMinLength = ValueMinLength;
+    }
+
+    public int getValueMaxLength() {
+        return ValueMaxLength;
+    }
+
+    public void setValueMaxLength(int ValueMaxLength) {
+        this.ValueMaxLength = ValueMaxLength;
+    }
+
 
    
    
